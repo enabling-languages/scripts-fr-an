@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>myanmarfonts@openroad.net.au</em:id>
+    <em:version>1.0</em:version>
+
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+    <em:unpack>true</em:unpack>
+
+    <!-- Front End MetaData -->
+    <em:name>Myanmar fonts package</em:name>
+    <em:description>Myanmar fonts for firefox mobile (android/os). this add-on will install a set of Myanmar fonts that enables proper rendering of Myanmar script on all sites (facebook, twitter, google, etc.), regardless of whether a font has been embedded into the web page.</em:description>
+    <em:creator>Andj</em:creator>
+
+    <!-- Firefox Android version --> 
+    <em:targetApplication>
+      <Description>
+        <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
+        <em:minVersion>19.0a1</em:minVersion>
+        <em:maxVersion>22.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Firefox version, testing purpose only --> 
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>4.0</em:minVersion>
+        <em:maxVersion>22.0a1</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
