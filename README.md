@@ -10,6 +10,12 @@ It is necessary to use font fallbacks.
 The addons in the scripts-fr-an project provide The Android Firefox with fallback fonts for scripts 
 that Android does not support.
 
+Acknowledgements
+----------------
+
+These addons were based on Mathieu Pellerin's Khmer Fonts Package and developed with his advice 
+and support: https://addons.mozilla.org/en-us/android/addon/khmer-fonts-package/
+
 Supported scripts
 -------------------
 
