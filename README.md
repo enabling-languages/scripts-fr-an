@@ -19,4 +19,9 @@ and support: https://addons.mozilla.org/en-us/android/addon/khmer-fonts-package/
 Supported scripts
 -------------------
 
-/myanmar
+Packages for the current scripts have bene developed:
+
+* Lao
+* Myanmar
+
+
