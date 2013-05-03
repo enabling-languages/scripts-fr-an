@@ -1,7 +1,7 @@
 Myanmar fonts package
 =====================
 
-myanmar\_fonts\_package-1.0-fx+an-android.xpi
+myanmar\_fonts\_package-1.1-fx+an-android.xpi
 Version 1.1 (2013-04-30)
 
 Released under the Mozilla Public License, version 2.0.

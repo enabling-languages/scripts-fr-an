@@ -6,7 +6,7 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
-    <em:id>laofonts@openroad.net.au</em:id>
+    <em:id>vaifonts@openroad.net.au</em:id>
     <em:version>1.0</em:version>
 
     <em:type>2</em:type>
@@ -14,8 +14,8 @@
     <em:unpack>true</em:unpack>
 
     <!-- Front End MetaData -->
-    <em:name>Lao fonts package</em:name>
-    <em:description>Lao fonts for firefox mobile (android/os). this add-on will install a set of Lao fonts that enables proper rendering of the Lao script on all sites (facebook, twitter, google, etc.), regardless of whether a font has been embedded into the web page.</em:description>
+    <em:name>Vai fonts package</em:name>
+    <em:description>Vai fonts for Firefox for Android. This add-on will install a set of Vai fonts that enables proper rendering of the Vai script on all sites (Facebook, Twitter, Google, etc.), regardless of whether a font has been embedded into the web page.</em:description>
     <em:creator>Andj</em:creator>
 
     <!-- Firefox Android version --> 

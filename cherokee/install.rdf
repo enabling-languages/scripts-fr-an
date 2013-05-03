@@ -6,7 +6,7 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
-    <em:id>laofonts@openroad.net.au</em:id>
+    <em:id>cherokeefonts@openroad.net.au</em:id>
     <em:version>1.0</em:version>
 
     <em:type>2</em:type>
@@ -14,8 +14,8 @@
     <em:unpack>true</em:unpack>
 
     <!-- Front End MetaData -->
-    <em:name>Lao fonts package</em:name>
-    <em:description>Lao fonts for firefox mobile (android/os). this add-on will install a set of Lao fonts that enables proper rendering of the Lao script on all sites (facebook, twitter, google, etc.), regardless of whether a font has been embedded into the web page.</em:description>
+    <em:name>Cherokee font package</em:name>
+    <em:description>Cherokee font for Firefox for Android. This add-on will install a Cherokee font that enables proper rendering of Cherokee script on all sites (Facebook, Twitter, Google, etc.), regardless of whether a font has been embedded into the web page.</em:description>
     <em:creator>Andj</em:creator>
 
     <!-- Firefox Android version --> 
@@ -23,7 +23,7 @@
       <Description>
         <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
         <em:minVersion>19.0a1</em:minVersion>
-        <em:maxVersion>24.0</em:maxVersion>
+        <em:maxVersion>25.0a1</em:maxVersion>
       </Description>
     </em:targetApplication>
 
@@ -32,7 +32,7 @@
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
         <em:minVersion>4.0</em:minVersion>
-        <em:maxVersion>24.0</em:maxVersion>
+        <em:maxVersion>25.0a1</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
