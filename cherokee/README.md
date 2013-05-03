@@ -1,4 +1,4 @@
-Myanmar fonts package
+Cherokee fonts package
 =====================
 
 cherokee\_fonts\_package-1.0-fx+an-android.xpi
