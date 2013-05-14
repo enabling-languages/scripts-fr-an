@@ -34,30 +34,40 @@ function startup(data, reason) {
                   getService(Ci.nsIProperties).
                   get("ProfD", Ci.nsIFile);
    fromDir.append("extensions");
-   fromDir.append("tifinaghfonts@openroad.net.au");
+   fromDir.append("taivietfonts@openroad.net.au");
    fromDir.append("defaults");
   }
   
   //when v19 moves to beta, remove font check in root user profile dir
   checkFile = profiledir.clone();
-  checkFile.append("hapaxber-sousensemble-webfont.ttf");
+  checkFile.append("TaiHeritagePro-R.ttf");
   if (!checkFile.exists()) {
    if (fromDir == null) linkFromDir();
    
    fromFile = fromDir.clone();
-   fromFile.append("hapaxber-sousensemble-webfont.ttf");
-   fromFile.copyTo(profiledir,"hapaxber-sousensemble-webfont.ttf");
+   fromFile.append("TaiHeritagePro-R.ttf");
+   fromFile.copyTo(profiledir,"TaiHeritagePro-R.ttf");
+
+   fromFile = fromDir.clone();
+   fromFile.append("TaiHeritagePro-B.ttf");
+   fromFile.copyTo(profiledir,"TaiHeritagePro-B.ttf");
+
    fontAdded = true;
   }
   
   checkFile = fontdir.clone();
-  checkFile.append("hapaxber-sousensemble-webfont.ttf");
+  checkFile.append("TaiHeritagePro-R.ttf");
   if (!checkFile.exists()) { 
    if (fromDir == null) linkFromDir();
    
    fromFile = fromDir.clone();
-   fromFile.append("hapaxber-sousensemble-webfont.ttf");
-   fromFile.copyTo(fontdir,"hapaxber-sousensemble-webfont.ttf");
+   fromFile.append("TaiHeritagePro-R.ttf");
+   fromFile.copyTo(fontdir,"TaiHeritagePro-R.ttf");
+   
+   fromFile = fromDir.clone();
+   fromFile.append("TaiHeritagePro-B.ttf");
+   fromFile.copyTo(fontdir,"TaiHeritagePro-B.ttf");
+   
    fontAdded = true;
   } 
   
@@ -79,12 +89,20 @@ function shutdown(data, reason) {
   fontdir.append("fonts");
 
   checkFile = profiledir.clone();
-  checkFile.append("hapaxber-sousensemble-webfont.ttf");
+  checkFile.append("TaiHeritagePro-R.ttf");
+  if (checkFile.exists()) checkFile.remove(true);
+  
+  checkFile = profiledir.clone();
+  checkFile.append("TaiHeritagePro-B.ttf");
   if (checkFile.exists()) checkFile.remove(true);
  
   if (fontdir.exists()) {
    checkFile = fontdir.clone();
-   checkFile.append("hapaxber-sousensemble-webfont.ttf");
+   checkFile.append("TaiHeritagePro-R.ttf");
+   if (checkFile.exists()) checkFile.remove(true);
+
+   checkFile = fontdir.clone();
+   checkFile.append("TaiHeritagePro-B.ttf");
    if (checkFile.exists()) checkFile.remove(true);
   }
 
