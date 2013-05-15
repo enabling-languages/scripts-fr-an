@@ -6,24 +6,24 @@
      xmlns:em="http://www.mozilla.org/2004/em-rdf#">
 
   <Description about="urn:mozilla:install-manifest">
-    <em:id>cherokeefonts@openroad.net.au</em:id>
+    <em:id>mmpackage@openroad.net.au</em:id>
     <em:version>1.0</em:version>
 
-    <em:type>2</em:type>
+    <!-- nsIUpdateItem type for a Multiple Item Package -->
+    <em:type>32</em:type>
     <em:bootstrap>true</em:bootstrap>
     <em:unpack>true</em:unpack>
 
     <!-- Front End MetaData -->
-    <em:name>Cherokee font package</em:name>
-    <em:description>Cherokee font for Firefox for Android. This add-on will install a Cherokee font that enables proper rendering of Cherokee script on all sites (Facebook, Twitter, Google, etc.), regardless of whether a font has been embedded into the web page. This addon was based on Mathieu Pellerin's Khmer Fonts Package and developed with his advice and support: https://addons.mozilla.org/en-us/android/addon/khmer-fonts-package/
-The Digohweli font has been included in the extension. Digohweli is copyright (c) 2006 by Chris Harvey. All rights reserved. It has been included in the package with the permission of Chris Harvey, and is explicitly excluded from the package license. Digohweli is available at http://www.languagegeek.com/font/fontdownload.html#Cherokee</em:description>
+    <em:name>MM Font Package</em:name>
+    <em:description>Provides font fall back for Myanmar and Kayah Li scripts</em:description>
     <em:creator>Andj</em:creator>
 
     <!-- Firefox Android version --> 
     <em:targetApplication>
       <Description>
         <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
-        <em:minVersion>19.0</em:minVersion>
+        <em:minVersion>19.0a1</em:minVersion>
         <em:maxVersion>24.0</em:maxVersion>
       </Description>
     </em:targetApplication>
@@ -32,9 +32,10 @@ The Digohweli font has been included in the extension. Digohweli is copyright (c
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
-        <em:minVersion>16.0</em:minVersion>
+        <em:minVersion>4.0</em:minVersion>
         <em:maxVersion>24.0</em:maxVersion>
       </Description>
     </em:targetApplication>
   </Description>
 </RDF>
+    

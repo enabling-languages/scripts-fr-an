@@ -14,10 +14,12 @@ regardless of whether a font has been embedded into the web page.
 Acknowledgements
 ----------------
 
-These addons were based on Mathieu Pellerin's Khmer Fonts Package and developed with his advice 
+This addon was based on Mathieu Pellerin's Khmer Fonts Package and developed with his advice 
 and support: https://addons.mozilla.org/en-us/android/addon/khmer-fonts-package/
 
-The Digohweli font has been included. 
+Digohweli is copyright (c) 2006 by Chris Harvey. All rights reserved.
+It has been included in the package with the permission of Chris Harvey, 
+and is explicitly excluded from the package license.
 
-Font and is available at http://www.languagegeek.com/font/fontdownload.html#Cherokee
+Digohweli is available at http://www.languagegeek.com/font/fontdownload.html#Cherokee
 
