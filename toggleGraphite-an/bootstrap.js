@@ -4,7 +4,7 @@ const Ci = Components.interfaces;
 function toggleGraphite(window) {
   var prefManager = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
   var graphitePref = prefManager.getBoolPref("gfx.font_rendering.graphite.enabled"); 
-  window.console.log("togglegraphite.an@openroad.net.au: toggling Graphite support from " + graphitePref );
+
     if (graphitePref==false) {
 	prefManager.setBoolPref("gfx.font_rendering.graphite.enabled", true); 
 	window.NativeWindow.toast.show("Turning Graphite support ON.", "short");
@@ -78,4 +78,8 @@ function shutdown(aData, aReason) {
 }
  
 function install(aData, aReason) {}
-function uninstall(aData, aReason) {}
+function uninstall(aData, aReason) {
+  var prefManager = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefBranch);
+  var graphitePref = prefManager.getBoolPref("gfx.font_rendering.graphite.enabled"); 
+  prefManager.setBoolPref("gfx.font_rendering.graphite.enabled", false);  
+}

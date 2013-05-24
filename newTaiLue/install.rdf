@@ -1,0 +1,41 @@
+<?xml version="1.0"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>newtailuefonts@openroad.net.au</em:id>
+    <em:version>1.0</em:version>
+
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+    <em:unpack>true</em:unpack>
+
+    <!-- Front End MetaData -->
+    <em:name>New Tai Lue fonts package</em:name>
+    <em:description>New Tai Lue fonts for Firefox For Android. This add-on will install a set of New Tai Lue
+    fonts that enables proper rendering of New Tai Lue script on all sites (Facebook, Twitter, Google, etc.),
+    regardless of whether a font has been embedded into the web page.</em:description>
+    <em:creator>Andj</em:creator>
+
+    <!-- Firefox Android version --> 
+    <em:targetApplication>
+      <Description>
+        <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
+        <em:minVersion>19.0a1</em:minVersion>
+        <em:maxVersion>24.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Firefox version, testing purpose only --> 
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>4.0</em:minVersion>
+        <em:maxVersion>24.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

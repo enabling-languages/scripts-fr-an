@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<!-- This Source Code Form is subject to the terms of the Mozilla Public
+   - License, v. 2.0. If a copy of the MPL was not distributed with this
+   - file, You can obtain one at http://mozilla.org/MPL/2.0/. -->
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>nkofont@openroad.net.au</em:id>
+    <em:version>1.0</em:version>
+
+    <em:type>2</em:type>
+    <em:bootstrap>true</em:bootstrap>
+    <em:unpack>true</em:unpack>
+
+    <!-- Front End MetaData -->
+    <em:name>N'ko font package</em:name>
+    <em:description>N'ko font for Firefox for Android. This add-on will install a N'ko font that enables proper rendering of
+    N'ko script on all sites (Facebook, Twitter, Google, etc.), regardless of whether a font has been embedded into the web page. This addon was based on Mathieu Pellerin's Khmer Fonts Package and developed with his advice and support: https://addons.mozilla.org/en-us/android/addon/khmer-fonts-package/
+    
+    This addon was based on Mathieu Pellerin's Khmer Fonts Package and developed with his advice and support: https://addons.mozilla.org/en-us/android/addon/khmer-fonts-package/
+
+    The Conakry font has been included. The font is repealsed under the Open Font License, Version 1.1.
+
+    Conakry is available at http://www.evertype.com/fonts/nko/
+    </em:description>
+    <em:creator>Andj</em:creator>
+
+    <!-- Firefox Android version --> 
+    <em:targetApplication>
+      <Description>
+        <em:id>{aa3c5121-dab2-40e2-81ca-7ea25febc110}</em:id>
+        <em:minVersion>19.0</em:minVersion>
+        <em:maxVersion>24.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+
+    <!-- Firefox version, testing purpose only --> 
+    <em:targetApplication>
+      <Description>
+        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+        <em:minVersion>16.0</em:minVersion>
+        <em:maxVersion>24.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>
