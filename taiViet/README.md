@@ -1,8 +1,8 @@
 Tai Viet fonts package
 =====================
 
-taiviet\_fonts\_package-1.0-fx+an-android.xpi
-Version 1.0 (2013-05-14)
+taiviet\_fonts\_package-1.1-fx+an-android.xpi
+Version 1.1 (2013-06-25)
 
 Released under the Mozilla Public License, version 2.0.
 

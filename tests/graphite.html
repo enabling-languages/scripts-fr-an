@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="my">
+<head>
+    <title>Graphite Test</title>
+    <meta charset="utf-8" />
+    <style>
+        @font-face {
+            font-family: "Charis SIL";
+            src: url(/i18n/fonts/CharisSIL-R.woff);
+        }
+        
+        @font-face {
+            font-family: "Padauk";
+            src: url(/i18n/fonts/Padauk.woff);
+        }
+        
+        body {font: 1.0em serif;}
+       
+        ol.Latn li, ol.Mymr li { font-size: 3.0em;}
+        .Latn {font-family: "Charis SIL";}
+        .Mymr {font-family: Padauk;}
+        .eng1 {-moz-font-feature-settings: "Engs" 0; font-feature-settings: "Engs" 0;}
+        .eng2 {-moz-font-feature-settings: "Engs" 1; font-feature-settings: "Engs" 1;}
+        .eng3 {-moz-font-feature-settings: "Engs" 2; font-feature-settings: "Engs" 2;}
+        .eng4 {-moz-font-feature-settings: "Engs" 3; font-feature-settings: "Engs" 3;}
+        .my {}
+        .kht {-moz-font-feature-settings: "kdot" 1, "fdot" 1; font-feature-settings: "kdot" 1, "fdot" 1;}
+        .ksw {-moz-font-feature-settings: "wtri" 1, "lldt" 1; font-feature-settings: "wtri" 1, "lldt" 1;}
+        /* .altmy {-moz-font-feature-settings: "wtri" 1; font-feature-settings: "wtri" 1;} */
+    </style>
+</head>
+
+<body>
+<h2>Capital Eng</h2>
+<ol class="Latn">
+    <li class="eng1">Ŋŋ</li>
+    <li class="eng2">Ŋŋ</li>
+    <li class="eng3">Ŋŋ</li>
+    <li class="eng4">Ŋŋ</li> 
+</ol>
+<p><strong>Graphite off:</strong> The four capital (uppercase) Engs should appear the same. All lowercase engs should appear the same.</p>
+<p><strong>Graphite on:</strong> The four uppercase Engs should appear different. The four lowercase Engs should appear the same:</p>
+<ol>
+    <li>Large Eng with descender. No change. Same as when Graphite is disabled.</li>
+    <li>Large eng on baseline.</li>
+    <li>Capital N with tail </li>
+    <li>Large eng with short stem </li>
+</ol>
+<h2>kwa syllable</h2>
+<ol class="Mymr">
+    <li class="my">ကွ</li>
+    <li class="kht">ကွ</li>
+    <li class="ksw">ကွ</li>  
+</ol>
+<p><strong>Graphite off:</strong> Three 'kra' syllables should appear the same</p>
+<p><strong>Graphite on:</strong> Three 'kra' syllables should appear different:</p>
+<ol>
+<li>First case should appear as default Burmese/Mon rendering, i.e. same as when graphite is disabled. No change.</li>
+<li>The Myanmar consonant KA should render using Khamti Shan style.</li>
+<li>The Myanmar medial WA should display using teardrop shape rather then the circular shape in the first two cases.</li>
+</ol>
+
+
+<h2>Lower dot positioning</h2>
+<ol class="Mymr">
+    <li class="my">ကွ့</li>
+    <li class="ksw">ကွ့</li>  
+</ol>
+<p><strong>Graphite off:</strong> Two syllables should appear the same</p>
+<p><strong>Graphite on:</strong> The two syllables should appear different:</p>
+<ol>
+<li>First case should appear as default Burmese/Mon rendering, i.e. same as when graphite is disabled. No change.</li>
+<li>The lower dot should render to the left of Medial WA. Medial WA should render using teardrop shape.</li>
+</ol>
+
+</body>
+</html>
+
+

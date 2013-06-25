@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Myanmar (TharLon) font test: Firefox for Android</title>
+    <style>
+        body {margin: 0; padding: 0; text-align: center; width: 500px; max-width: 98%; margin-left: auto; margin-right: auto; }
+        #sample {font-size: 3.0em;}
+        h2 {font-size: 1.0em}
+        
+        #refimage, #sampletext {border: solid black 1px;}
+        
+        #intro, dl * {text-align: left;}
+    </style>
+</head>
+
+<body>
+    <h1>Myanmar (TharLon) font test: Firefox for Android</h1>
+    <div id="intro">
+    <p>No typeface is specified in this page's CSS, therefore Firefox should use font fallback to select a font.
+    Most android devices do not fonts installed that support Myanmar script.</p>
+    
+    <p>If Myanmar text is rendered similar to what appears in the reference image, the
+    font pack is successfully supplying a fallback font local to Firefox for Android.</p>
+    </div>
+    
+    <div id="refimage">
+        <h2>Reference image</h2>
+        <img src="inc/tharlon.png" alt="မြန်မာဘာသာ" title="မြန်မာဘာသာ">
+    </div>
+    
+    
+    <div id="sampletext">
+        <h2>Sample text</h2>
+        <p id="sample">မြန်မာဘာသာ</p>
+    </div>
+    
+    <h2>Expected behaviour</h2>
+    
+    <dl>
+        <dt>Before addon is installed:</dt> <dd>Myanmar characters should display as boxes, i.e. .notdef glyph from font being used to render page.</dd>
+        <dt>After addon is installed:</dt> <dd>Myanmar text should be displayed and match the reference  image on test page.</dd>
+        <dt>After addon is disabled:</dt> <dd>Myanmar characters should display as boxes.</dd>
+        <dt>After addon is re-enabled:</dt> <dd>Myanmar characters should display as per reference image.</dd>
+        <dt>After addon is uninstalled:</dt> <dd>Myanmar characters should display as boxes.</dd>
+    </dl>
+    
+</body>
+</html>

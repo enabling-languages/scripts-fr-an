@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Tai Viet font test</title>
+    <style>
+        body {margin: 0; padding: 0; text-align: center; width: 300px; max-width: 98%; margin-left: auto; margin-right: auto; }
+        #sample {font-size: 5.0em;}
+        h2 {font-size: 1.0em}
+        
+        #refimage, #sampletext {border: solid black 1px;}
+    </style>
+</head>
+
+<body>
+    <h1>Tai Viet font test</h1>
+    <p>No typeface is specified in the page's CSS, therefore Firefox should use font fallback to select a font.
+    If Tai Viet text is rendered similar to what appears in the reference image shows, then the
+    font apck is successfully supplying a fallback font local to Firefox.</p>
+    
+    <div id="refimage">
+        <h2>Reference image</h2>
+        <img src="inc/taiviet.png" alt="ꪺꪕꪒꪾ" title="ꪺꪕꪒꪾ">
+    </div>
+    
+    
+    <div id="sampletext">
+        <h2>Sample text</h2>
+        <p id="sample">ꪺꪕꪒꪾ</p>
+    </div>
+</body>
+</html>

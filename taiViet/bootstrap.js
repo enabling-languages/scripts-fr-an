@@ -9,9 +9,9 @@ var Ci = Components.interfaces;
 function install() {}
  
 function uninstall() {}
- 
+
 function startup(data, reason) {
- if (reason == 3 || reason == 5 || reason == 7) {     
+ if (reason == ADDON_ENABLE || reason == ADDON_INSTALL || reason == ADDON_UPGRADE) {     
   //note: fonts are compiled from the ProfLD directory, nor ProfD
   var profiledir = Cc["@mozilla.org/file/directory_service;1"].
                   getService(Ci.nsIProperties).
@@ -79,7 +79,7 @@ function startup(data, reason) {
 }
  
 function shutdown(data, reason) {
- if (reason == 4) {
+ if (reason == ADDON_DISABLE || reason == APP_SHUTDOWN || reason == ADDON_UNINSTALL) {
   //be nice, clean up
   var checkFile = null;
   var profiledir = Cc["@mozilla.org/file/directory_service;1"].
@@ -105,7 +105,6 @@ function shutdown(data, reason) {
    checkFile.append("TaiHeritagePro-B.ttf");
    if (checkFile.exists()) checkFile.remove(true);
   }
-
   var fonts = Cc["@mozilla.org/gfx/fontenumerator;1"].getService(Components.interfaces.nsIFontEnumerator);
   fonts.updateFontList();
  }
