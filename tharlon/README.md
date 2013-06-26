@@ -1,8 +1,8 @@
-Myanmar fonts package
+Tharlon font package
 =====================
 
 tharlon\_font\_package-1.0-fx+an-android.xpi
-Version 1.0 (2013-05-31)
+Version 1.0 (2013-06-26)
 
 Released under the Mozilla Public License, version 2.0.
 
