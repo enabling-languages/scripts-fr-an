@@ -56,17 +56,17 @@ function startup(data, reason) {
   }
   
   checkFile = fontdir.clone();
-  checkFile.append("Padauk.ttf");
+  checkFile.append("MON3 Anonta 1.ttf");
   if (!checkFile.exists()) { 
    if (fromDir == null) linkFromDir();
    
    fromFile = fromDir.clone();
-   fromFile.append("Padauk.ttf");
-   fromFile.copyTo(fontdir,"Padauk.ttf");
+   fromFile.append("MON3 Anonta 1.ttf");
+   fromFile.copyTo(fontdir,"MON3 Anonta 1.ttf");
    
    fromFile = fromDir.clone();
-   fromFile.append("Padauk-bold.ttf");
-   fromFile.copyTo(fontdir,"Padauk-bold.ttf");
+   fromFile.append("MON3 Anonta 1.ttf");
+   fromFile.copyTo(fontdir,"MON3 Anonta 1.ttf");
    
    fontAdded = true;
   } 
@@ -89,20 +89,20 @@ function shutdown(data, reason) {
   fontdir.append("fonts");
 
   checkFile = profiledir.clone();
-  checkFile.append("Padauk.ttf");
+  checkFile.append("MON3 Anonta 1.ttf");
   if (checkFile.exists()) checkFile.remove(true);
   
   checkFile = profiledir.clone();
-  checkFile.append("Padauk-bold.ttf");
+  checkFile.append("MON3 Anonta 1.ttf");
   if (checkFile.exists()) checkFile.remove(true);
  
   if (fontdir.exists()) {
    checkFile = fontdir.clone();
-   checkFile.append("Padauk.ttf");
+   checkFile.append("MON3 Anonta 1.ttf");
    if (checkFile.exists()) checkFile.remove(true);
 
    checkFile = fontdir.clone();
-   checkFile.append("Padauk-bold.ttf");
+   checkFile.append("MON3 Anonta 1.ttf");
    if (checkFile.exists()) checkFile.remove(true);
   }
 
